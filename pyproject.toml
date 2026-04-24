@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clawthon-openclaw-project"
+version = "0.1.0"
+description = "OpenClaw-side Wecreate Clawthon automation workflow"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+]
+
+[project.scripts]
+clawthon-openclaw = "clawthon_openclaw.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["clawthon_openclaw*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,18 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Local credentials and runtime state
+.env
+*.env.local
+config/*.env.local
+output/
+

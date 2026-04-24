@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wecreate Participant"
+  short_description: "Create and update Wecreate submissions"
+  default_prompt: "Use $wecreate-hackathon-participant to manage my submission for an allowed Wecreate hackathon."
