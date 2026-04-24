@@ -49,13 +49,14 @@ Optional default fields:
 - `I-006`: Production draft creation was attempted with user `7` and `team_id=10`; Wecreate returned `403 仅队长可以提交作品`. This confirms the team leader account is required for submission writes.
 - `I-007`: GitHub is available locally through `gh`; do not store the GitHub token in project files. Use the keychain-backed `gh` login.
 - `I-008`: Resolved. Leader invited `Hai-qq` with write access, the invitation was accepted, and GitHub reports `push=true`.
-- `I-009`: Target repository was cloned locally at `clawthon-openclaw-project`. It was empty at clone time, so an initial collaboration skeleton is being prepared and pushed.
+- `I-009`: Resolved. Target repository was cloned locally at `clawthon-openclaw-project`; the initial collaboration skeleton was committed and pushed to `main`.
+- `I-010`: Member work branch `agent/member-openclaw-workflow` was created and pushed for ongoing member-agent development.
+- `I-011`: OpenClaw sent a Feishu group update mentioning the leader-side bot with the GitHub repo, branch, and remaining Wecreate leader-permission blocker.
 
 ## Next Actions
 
 1. Prepare a candidate submission payload locally.
 2. Validate payload shape against production `form-config`.
-3. Push the initialized project skeleton to `lu-hongming/clawthon-openclaw-project`.
-4. Obtain the team leader JWT or transfer team leadership to user `7`.
-5. Create a draft submission with `team_id=10` and the final `repo_url`.
-6. Do not finalize without explicit final submission instruction.
+3. Obtain the team leader JWT or transfer team leadership to user `7`.
+4. Create a draft submission with `team_id=10` and the final `repo_url`.
+5. Do not finalize without explicit final submission instruction.
