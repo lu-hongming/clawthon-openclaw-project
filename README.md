@@ -37,6 +37,12 @@ python -m clawthon_openclaw my-enrollment --hackathon-id 2
 
 Submission writes are team-leader gated on Wecreate. The current member account can inspect state, but final draft creation/update must be performed by the team leader account or after leadership transfer.
 
+## Submission Handoff
+
+The candidate Wecreate draft payload lives at `submission/wecreate-draft-payload.json`.
+
+The leader-side agent should follow `docs/leader-submission-handoff.md` to create or update the team draft with the team-leader JWT. Do not finalize without an explicit final-submit instruction.
+
 ## Collaboration
 
 - `main`: stable shared state.
@@ -44,4 +50,3 @@ Submission writes are team-leader gated on Wecreate. The current member account 
 - `agent/leader-submission`: leader-owned submission copy and final Wecreate release metadata.
 
 See `docs/openclaw-github-collaboration.md` and `docs/openclaw-production-run-log.md` for current blockers and run history.
-

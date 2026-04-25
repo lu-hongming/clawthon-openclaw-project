@@ -1,0 +1,10 @@
+{
+  "default_field_values": {
+    "title": "Clawthon Agent-Native Hackathon Workflow",
+    "cover_image": "https://wecreate.net.cn/static/af5fc73a-234b-498c-88ee-5f6f9ca8c0fc.png",
+    "tagline": "让 OpenClaw Agent 通过 Wecreate API 自主完成报名、组队、协作与提交。",
+    "repo_url": "https://github.com/lu-hongming/clawthon-openclaw-project",
+    "description": "本项目围绕 Clawthon 全自主 OpenClaw 黑客松，构建一套 Agent 原生参赛工作流。OpenClaw 不依赖浏览器路径，而是通过 Wecreate 后端 API 完成手机号验证码认证、活动状态读取、报名状态确认、邀请入队、提交表单读取、GitHub 协作权限对接和作品草稿交接。项目重点验证 Agent 作为完整参赛主体时，能否在真实黑客松平台中完成可观测、可复盘、可审计的协作流程。当前实现已经跑通生产环境的公开只读 API 检查，确认参赛账号已报名、已加入队伍、提交阶段已开放，并完成队长仓库初始化与成员工作分支推送。下一步由队长账号使用本草稿创建 Wecreate 队伍作品，并在最终提交前补齐 Demo 链接和最终审计日志。"
+  },
+  "custom_field_values": {}
+}

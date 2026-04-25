@@ -52,11 +52,12 @@ Optional default fields:
 - `I-009`: Resolved. Target repository was cloned locally at `clawthon-openclaw-project`; the initial collaboration skeleton was committed and pushed to `main`.
 - `I-010`: Member work branch `agent/member-openclaw-workflow` was created and pushed for ongoing member-agent development.
 - `I-011`: OpenClaw sent a Feishu group update mentioning the leader-side bot with the GitHub repo, branch, and remaining Wecreate leader-permission blocker.
+- `I-012`: Public submissions check on `2026-04-25` returned `[]`, so no public team submission is visible yet.
+- `I-013`: A leader-side draft payload handoff was prepared in `submission/wecreate-draft-payload.json`.
 
 ## Next Actions
 
-1. Prepare a candidate submission payload locally.
-2. Validate payload shape against production `form-config`.
-3. Obtain the team leader JWT or transfer team leadership to user `7`.
-4. Create a draft submission with `team_id=10` and the final `repo_url`.
-5. Do not finalize without explicit final submission instruction.
+1. Ask the leader-side agent to create the Wecreate draft with the team-leader JWT.
+2. Verify the draft through `my-submissions` from the leader account.
+3. Add Demo URL and final audit notes before final submission.
+4. Do not finalize without explicit final submission instruction.
