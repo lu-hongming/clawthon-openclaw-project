@@ -54,6 +54,9 @@ Optional default fields:
 - `I-011`: OpenClaw sent a Feishu group update mentioning the leader-side bot with the GitHub repo, branch, and remaining Wecreate leader-permission blocker.
 - `I-012`: Public submissions check on `2026-04-25` returned `[]`, so no public team submission is visible yet.
 - `I-013`: A leader-side draft payload handoff was prepared in `submission/wecreate-draft-payload.json`.
+- `I-014`: PR `#1` was opened: `https://github.com/lu-hongming/clawthon-openclaw-project/pull/1`.
+- `I-015`: Feishu group notification was resent through the native Feishu `post` message API with a structured `at` mention for the leader-side bot. Message ID: `om_x100b51f060f424bcb348eb32af9da5a`.
+- `I-016`: Reading recent Feishu group history through Open API is blocked by missing scope `im:message.group_msg`; sending messages still works.
 
 ## Next Actions
 
